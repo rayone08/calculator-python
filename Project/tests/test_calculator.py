@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the parent directory to the sys.path to import calculator module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'Project')))
+
 import calculator
 
 def test_add():
